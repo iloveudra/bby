@@ -10,8 +10,8 @@ function selectOption(option) {
             displayCatHeart(); // Display the cat-heart.gif
         });
     } else if (option === 'no') {
-        // Change text on the "No" button to "Tem certeza?"
-        document.getElementById('no-button').innerText = 'Tem certeza?'; 
+        // Change text on the "No" button to "tem certeza?"
+        document.getElementById('no-button').innerText = 'tem certeza?'; 
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -19,7 +19,7 @@ function selectOption(option) {
         yesButton.style.fontSize = newSize + 'px';
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
-        alert('Invalid option!');
+        alert('Opção inválida!');
     }
 }
 
